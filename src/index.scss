@@ -1,0 +1,154 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--txt-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --bg-color: #ffffff;
+  --txt-color: #ffffff;
+  --txt2-color: #003F74;
+  --card-color: #011E55;
+  --btn-color: #018181;
+  --btn2-color: #013D7B;
+  --cases-color: #F8F8F8;
+  --case-color: #303846;
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+
+  color: var(--txt-color);
+  text-decoration: none;
+}
+
+#about,
+#service,
+#features,
+#cases,
+#testimonials,
+#questions,
+#partners,
+#signup {
+  h2 {
+    font-size: 45px;
+    font-family: 'cero';
+  }
+}
+
+p {
+  // font-family: 'ave-medium';
+  // font-size: 18px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Avenir LT Std', sans-serif;
+}
+
+@font-face {
+  font-family: 'ave-light';
+  src: url(../src/assets/fonts/Avenir\ LT\ Std\ 35\ Light/);
+}
+
+@font-face {
+  font-family: 'ave-medium';
+  src: url(../src/assets/fonts/Avenir\ LT\ Std\ 65\ Medium/);
+}
+
+@font-face {
+  font-family: 'cero';
+  src: url(../src/assets/fonts/Fontspring-DEMO-cerapro-black.otf);
+}
+
+@font-face {
+  font-family: 'cero-bold';
+  src: url(../src/assets/fonts/Fontspring-DEMO-cerapro-bold.otf);
+}
+
+@font-face {
+  font-family: 'cero-medium';
+  src: url(../src/assets/fonts/Fontspring-DEMO-cerapro-medium.otf);
+}
+
+
+.features {
+  .arrow-con {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    div {
+      position: relative;
+      display: block;
+      width: 1px;
+      padding: 30px;
+      border-radius: 50%;
+      background-color: var(--txt2-color);
+    }
+
+    img {
+      filter: brightness(0) invert(1);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+    }
+
+  }
+
+  .card-container {
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    gap: 20px;
+
+    .cards-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding-left: 50px;
+
+      .card {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        border-radius: 9px;
+        width: 320px;
+        height: 200px;
+        padding: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .cards-inner .one {
+        position: relative;
+        right: 50px;
+      }
+    }
+  }
+}
