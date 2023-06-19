@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Featured from "../components/Featured";
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState({});
 
+    const [isOpen, setIsOpen] = useState({});
     const toggleDropdown = (itemId) => {
         setIsOpen((prevState) => ({
             ...prevState,
@@ -12,6 +12,16 @@ const Home = () => {
         }));
     };
 
+    const [cardPosition, setCardPosition] = useState(0);
+const handleNextClick = () => {
+  setCardPosition((prevPosition) => prevPosition + 1);
+};
+
+const handlePrevClick = () => {
+  setCardPosition((prevPosition) => prevPosition - 1);
+};
+
+    
 
 
     return (
@@ -117,8 +127,8 @@ const Home = () => {
                                         })}
                                     </div>
                                     <div className="arrow-container">
-                                        <div className="1"><img src={item.img} alt="" /></div>
-                                        <div className="2"><img src={item.image} alt="" /></div>
+                                        <div><img src={item.img} alt="" /></div>
+                                        <div><img src={item.image} alt="" /></div>
 
 
                                     </div>
