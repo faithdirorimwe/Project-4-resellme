@@ -22,8 +22,6 @@ const handlePrevClick = () => {
 };
 
     
-
-
     return (
         <>
             {data.home && data.home.map((item) => {
@@ -177,7 +175,9 @@ const handlePrevClick = () => {
                                     <div className="que-inner">
                                         <div className="headings">
                                             <h2>{item.title}</h2>
-                                            <p>{item.ptext} <br /> <br /> {item.ptext1}</p>
+                                            <p>{item.ptext} 
+                                            <br /> <br />
+                                             {item.ptext1}</p>
                                         </div>
 
                                         <div className="content">

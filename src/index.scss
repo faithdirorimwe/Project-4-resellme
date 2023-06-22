@@ -48,10 +48,21 @@ a {
   }
 }
 
-p {
-  // font-family: 'ave-medium';
-  // font-size: 18px;
+@media (max-width: 1100px) {
+  #about,
+#service,
+#features,
+#cases,
+#testimonials,
+#questions,
+#partners,
+#signup {
+  h2 {
+    font-size: 33px;
+  }
 }
+}
+
 
 body {
   overflow-x: hidden;
@@ -119,7 +130,7 @@ body {
   }
 
   .card-container {
-    overflow-x: auto;
+    // overflow-x: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 80px;
@@ -152,3 +163,44 @@ body {
     }
   }
 }
+
+
+@media (max-width: 1320px) {
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+        width: 280px;
+      }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+        width: 231px;
+      }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+        width: 180px;
+        height: 144px;
+      }
+      }
+    }
+  }
+}
+
+
+
