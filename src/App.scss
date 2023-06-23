@@ -118,7 +118,7 @@ main {
   }
 
   .btn-container {
-    max-width: 575px;
+    max-width: 60%;
     flex-wrap: wrap;
     margin: 0 auto;
     display: flex;
@@ -243,6 +243,7 @@ main {
     .cards {
       width: 400px;
       height: 500px;
+      border-radius: 10px;
       background: var(--card-color);
 
       .circle {
@@ -675,7 +676,7 @@ main {
   margin-top: 180px;
   padding: 80px;
   background-color: #303846;
-  height: 423px;
+  height: 372px;
 
 
   h1 {
@@ -689,6 +690,8 @@ main {
     text-align: start;
     gap: 180px;
     margin-bottom: 38px;
+    flex-wrap: wrap;
+  
   }
 
 
@@ -713,25 +716,6 @@ main {
 
 
 @media (max-width: 1320px) {
-
-  //   #hero{
-  //     .image{
-  //       padding-top: 70px;
-  //     }
-  //   }
-
-  //   #service {
-  //     .content {
-  //       .cards {
-  //         width: 360px;
-  //         height: 517px;
-  //       }
-  //     }
-
-  //     .btn {
-  //       width: 360px;
-  //     }
-  //   }
 
 }
 
@@ -781,7 +765,7 @@ main {
 
     .image {
       img {
-        height: 80vh;
+        height: 870px;
       }
 
     }
@@ -840,7 +824,11 @@ main {
   }
 
   #about {
-    padding-top: 300px;
+    padding-top: 250px;
+
+    .image{
+      width: 100%
+    }
   }
 
 
@@ -894,15 +882,60 @@ main {
       }
     }
   }
+
+  #signup{
+    .image{
+      img{
+        height: 75vh;
+      }
+    }
+  }
+
+  #contact{
+    height: auto;
+  }
+ 
 }
 
 
 
 
 @media (max-width: 768px) {
+
   #testimonials {
     .content {
       max-width: 665px;
+    }
+  }
+
+  #contact{
+    .inner-contact{
+     flex-direction: column;
+    }
+  }
+
+  #about{
+    padding-top: 150px;
+    .image{
+      img{
+        width: 79%;
+      }
+    }
+  }
+
+  #questions{
+    .content{
+
+      .dropdown-container  {
+        p{
+          padding: 20px;
+        width: 472px;
+        }
+    }
+      .btn{
+        width: 450px;
+        text-align: start;
+      }
     }
   }
 }
@@ -934,15 +967,56 @@ main {
   #about{
     padding-top: 110px;
 
-    .image{
-      width: 100%;
+    .btn{
+      width: 40%;
+    }
 
+.about-content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2{
+    width: 50%;
+  }
+
+  p{
+    width: 70%;
+  }
+}
+
+    .image{
       img{
         width: 90%;
       }
     }
   }
 
+  #features{
+    .content{
+      width: inherit;
+    }
+
+    .heading{
+      p{
+        width: 130%;
+      }
+    }
+  }
+
+  #service{
+    .content{
+      .cards{
+        width: 80%;
+        height: 1%;
+      }
+    }
+
+    .btn{
+      width: 80%;
+    }
+  }
 
 #testimonials {
 
@@ -998,13 +1072,20 @@ main {
 
     .btn {
       width: 80vw;
-      text-align: start;
       height: 80px;
 
       img {
         display: none;
       }
 
+    }
+  }
+}
+
+#signup{
+  .content{
+    .btn{
+      width: 47%;
     }
   }
 }
