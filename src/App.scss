@@ -787,7 +787,7 @@ main {
         z-index: 1000;
         padding-top: 59px;
         padding-bottom: 38px;
-        transform: translateX(1000%);
+        transform: translateY(-640px);
         transition: transform 0.5s ease-in-out;
 
         .menu {
@@ -915,7 +915,7 @@ main {
   }
 
   #about{
-    padding-top: 150px;
+    padding-top: 280px;
     .image{
       img{
         width: 79%;
@@ -935,6 +935,14 @@ main {
       .btn{
         width: 450px;
         text-align: start;
+      }
+    }
+  }
+
+  #features{
+    .card-container{
+      .cards-inner{
+        width: 97vw;
       }
     }
   }

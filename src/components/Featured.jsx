@@ -63,6 +63,11 @@ const Featured = () => {
                 <div onClick={handleNextClick}><img src={arrow} alt="next" /></div>
                 <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
             </div>
+
+            <div className="card-con2">
+                
+            </div>
+
         </div>
     );
 }
