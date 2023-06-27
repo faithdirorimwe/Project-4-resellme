@@ -75,7 +75,7 @@ a {
 
 
 
-@media (max-width: 350px) {
+@media (max-width: 479px) {
   #about,
 #service,
 #features,
@@ -85,7 +85,7 @@ a {
 #partners,
 #signup {
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 }
@@ -311,5 +311,14 @@ body {
   }
 }
 
-
+@media (max-width: 479px) {
+  .features{
+    .arrow-con2{
+      gap: 15px;
+      div{
+        padding: 20px;
+      }
+    }
+  }
+}
 

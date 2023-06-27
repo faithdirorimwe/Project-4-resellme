@@ -951,6 +951,25 @@ main {
 
 @media (max-width: 479px) {
 
+nav{
+
+  .logo{
+    width: 143px;
+  }
+  .image{
+    img{
+      height: 740px;
+    }
+  }
+  .menu-icon{
+        right: 17px;
+  h1{
+    font-size: 16px;
+  }
+}
+}
+
+
   #hero {
     .heading {
       flex-flow: column;
@@ -958,8 +977,20 @@ main {
       justify-content: center;
       align-items: center;
 
+      h1{
+            font-size: 33px;
+    line-height: 47px;
+      }
+
       p{
-        width: 299px;
+        width: 60%;
+        font-size: 15px;
+      }
+    }
+
+    .btn-container{
+      .btn{
+        font-size: 15px;
       }
     }
 
@@ -977,6 +1008,7 @@ main {
 
     .btn{
       width: 40%;
+      font-size: 15px;
     }
 
 .about-content{
@@ -986,11 +1018,11 @@ main {
   align-items: center;
 
   h2{
-    width: 50%;
+    width: 53%;
   }
 
   p{
-    width: 70%;
+    width: 93%;
   }
 }
 
@@ -1002,13 +1034,40 @@ main {
   }
 
   #features{
+
+    .image{
+          padding: 30px;
+    }
+
     .content{
       width: inherit;
     }
 
     .heading{
+      width: 100%;
       p{
         width: 130%;
+      }
+    }
+  }
+
+  #cases{
+    .content{
+      .infor{
+        .image{
+              padding: 30px;
+        }
+      }
+    }
+
+    .btn{
+      font-size: 15px;
+    }
+
+    .arrow-container{
+      gap: 15px;
+      div{
+            padding: 20px;
       }
     }
   }
@@ -1018,11 +1077,30 @@ main {
       .cards{
         width: 80%;
         height: 1%;
+
+        .circle{
+              width: 52px;
+    padding: 5px;
+        }
+
+        .image{
+          img{
+            width: 32%;
+          }
+        }
+
+        .content{
+          padding: 8px;
+          h3{
+                font-size: 24px;
+          }
+        }
       }
     }
 
     .btn{
       width: 80%;
+      font-size: 15px;
     }
   }
 
@@ -1045,6 +1123,11 @@ main {
 
     .arrow-con {
       justify-content: center;
+      gap: 15px;
+
+      div{
+            padding: 20px;
+      }
     }
 
   }
@@ -1065,8 +1148,11 @@ main {
 #questions {
 
   .headings {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     p {
-      width: inherit;
+      width: 144%;
     }
   }
 
@@ -1081,6 +1167,7 @@ main {
     .btn {
       width: 80vw;
       height: 80px;
+      font-size: 15px;
 
       img {
         display: none;
@@ -1094,136 +1181,16 @@ main {
   .content{
     .btn{
       width: 47%;
+      font-size: 14px;
     }
   }
 }
-}
 
-
-@media (max-width: 400px){
-  nav{
-
-    .image{
-      img{
-        height: 620px;
-      }
-    }
-    .menu-icon{
-      top: -43px;
-    }
-    .navbar{
-      img{
-        width: 100%;
-      }
-    }
-  }
-
-  #hero{
- .heading{
+#contact{
   h1{
-    font-size: 23px;
-    line-height: 35px;
-  }
-
-  p{
-    width: 142px;
-    font-size: 10px;
-  }
- }
-
- .btn-container{
-  .btn{
-    font-size: 11px;
-  }
- }
-  }
-
-  #about{
-    padding-top: 0;
-
-    .btn{
-      font-size: 10px;
-    }
-
-    .about-content{
-      h2{
-        width: 66%;
-      }
-      p{
-        font-size: 10px;
-      }
-    }
-  }
-
-  #service{
-    .content{
-      .cards{
-        width: 95%;
-        
-        .circle{
-          right: -6px;
-          width: 44px;
-          padding: 5px;
-        }
-        .content{
-          padding: 4px;
-          h3{
-            font-size: 18px;
-          }
-        }
-        .image{
-          img{
-            width: 40%;
-          }
-        }
-      }
-    }
-  }
-
-  #features{
-    .content{
-      .infor{
-        p{
-          width: 182px;
-        }
-      }
-    }
-    .heading{
-      width: 112%;
-
-      p{
-        width: 192%;
-      }
-    }
-  }
-
-  #questions{
-    .content{
-      .btn{
-        font-size: 10px;
-      }
-    }
-    .headings{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      p{
-        width: 180%;
-      }
-    }
-  }
-
-  #signup{
-    .content{
-      .btn{
-        font-size: 10px;
-      }
-    }
-  }
-
-  #contact{
-    .inner-contact{
-      margin-left: -70px;
-    }
+    font-size: 20px;
   }
 }
+}
+
+
