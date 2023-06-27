@@ -24,7 +24,7 @@ import bg from "../src/assets/images/bg-2.png";
 
 
 const data = {
-    "home": [
+    "Home": [
         {
             "id": 1,
             "hero": [

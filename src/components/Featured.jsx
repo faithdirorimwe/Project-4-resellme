@@ -27,46 +27,88 @@ const Featured = () => {
     return (
         <div className="features">
             <div className="card-container">
-            {isNextActive ? (
-                <div className="cards-inner" style={{ transform: `translateX(${cardPosition * -320}px)` }}>
-                    <div className="card">
-                        <img src={one} alt="" />
+                {isNextActive ? (
+                    <div className="cards-inner" style={{ transform: `translateX(${cardPosition * -320}px)` }}>
+                        <div className="card">
+                            <img src={one} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={two} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={three} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={four} alt="" />
+                        </div>
                     </div>
-                    <div className="card">
-                        <img src={two} alt="" />
-                    </div>
-                    <div className="card">
-                        <img src={three} alt="" />
-                    </div>
-                    <div className="card">
-                        <img src={four} alt="" />
-                    </div>
-                </div>
                 ) : (
-                <div className="cards-inner">
-                    <div className="card">
-                        <img src={five} alt="" />
+                    <div className="cards-inner">
+                        <div className="card">
+                            <img src={five} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={six} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={seven} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={eight} alt="" />
+                        </div>
                     </div>
-                    <div className="card">
-                        <img src={six} alt="" />
-                    </div>
-                    <div className="card">
-                        <img src={seven} alt="" />
-                    </div>
-                    <div className="card">
-                        <img src={eight} alt="" />
-                    </div>
-                </div>
-                 )}
+                )}
             </div>
             <div className="arrow-con">
                 <div onClick={handleNextClick}><img src={arrow} alt="next" /></div>
                 <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
             </div>
 
-            <div className="card-con2">
-                
+            <div className="card-inner2">
+                <div className="inner">
+                    <div className="cards-inner">
+                        <div className="card">
+                            <img src={one} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={two} alt="" />
+                        </div>
+                    </div>
+
+                    <div className="cards-inner">
+                        <div className="card">
+                            <img src={three} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={four} alt="" />
+                        </div>
+                    </div>
+
+                    <div className="cards-inner">
+                        <div className="card">
+                            <img src={five} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={six} alt="" />
+                        </div>
+                    </div>
+
+                    <div className="cards-inner">
+                        <div className="card">
+                            <img src={seven} alt="" />
+                        </div>
+                        <div className="card">
+                            <img src={eight} alt="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div className="arrow-con2">
+                <div onClick={handleNextClick}><img src={arrow} alt="next" /></div>
+                <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
             </div>
+            </div>
+
 
         </div>
     );

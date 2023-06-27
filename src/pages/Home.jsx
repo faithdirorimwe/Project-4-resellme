@@ -24,7 +24,7 @@ const handlePrevClick = () => {
     
     return (
         <>
-            {data.home && data.home.map((item) => {
+            {data.Home && data.Home.map((item) => {
                 return (
                     <main key={item.id}>
                         {item.hero && item.hero.map(item => {

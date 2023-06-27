@@ -24,6 +24,16 @@
 
 }
 
+body {
+  overflow-x: hidden;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 li {
   list-style: none;
 }
@@ -59,6 +69,23 @@ a {
 #signup {
   h2 {
     font-size: 33px;
+  }
+}
+}
+
+
+
+@media (max-width: 350px) {
+  #about,
+#service,
+#features,
+#cases,
+#testimonials,
+#questions,
+#partners,
+#signup {
+  h2 {
+    font-size: 20px;
   }
 }
 }
@@ -102,6 +129,9 @@ body {
 
 
 .features {
+  .arrow-con2{
+    display: none;
+  }
   .arrow-con {
     padding-top: 30px;
     display: flex;
@@ -128,7 +158,9 @@ body {
     }
 
   }
-
+  .card-inner2{
+    display: none;
+  }
   .card-container {
     // overflow-x: auto;
     display: grid;
@@ -136,6 +168,7 @@ body {
     padding-top: 80px;
     gap: 20px;
 
+   
     .cards-inner {
       display: flex;
       align-items: center;
@@ -199,6 +232,82 @@ body {
       }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .features{
+    .card-container{
+      .cards-inner{
+        display: none;
+      }
+     
+    }
+
+
+    .card-inner2{
+      display: block;
+
+      .inner{
+        overflow-x: auto;
+        display: flex;
+        gap: 60px;
+        align-items: start;
+        
+
+        .cards-inner{
+          display: flex;
+          gap: 20px;
+
+          .card{
+            background: #FFFFFF;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+            border-radius: 9px;
+            width: 45vw;
+            // height: 25vh;
+            padding: 20px;
+
+            img{
+              width: 100%;
+            }
+          }
+      
+        }
+      }
+    }
+
+
+    .arrow-con{
+      display: none;
+    }
+    .arrow-con2{
+      display: block;
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+  
+      div {
+        position: relative;
+        display: block;
+        width: 1px;
+        padding: 30px;
+        border-radius: 50%;
+        background-color: var(--txt2-color);
+      }
+  
+      img {
+        filter: brightness(0) invert(1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+      }
+    }
+
+ 
   }
 }
 

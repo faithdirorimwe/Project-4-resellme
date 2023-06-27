@@ -1098,3 +1098,132 @@ main {
   }
 }
 }
+
+
+@media (max-width: 350px){
+  nav{
+
+    .image{
+      img{
+        height: 620px;
+      }
+    }
+    .menu-icon{
+      top: -43px;
+    }
+    .navbar{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  #hero{
+ .heading{
+  h1{
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  p{
+    width: 142px;
+    font-size: 10px;
+  }
+ }
+
+ .btn-container{
+  .btn{
+    font-size: 11px;
+  }
+ }
+  }
+
+  #about{
+    padding-top: 0;
+
+    .btn{
+      font-size: 10px;
+    }
+
+    .about-content{
+      h2{
+        width: 66%;
+      }
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+
+  #service{
+    .content{
+      .cards{
+        width: 95%;
+        
+        .circle{
+          right: -6px;
+          width: 44px;
+          padding: 5px;
+        }
+        .content{
+          padding: 4px;
+          h3{
+            font-size: 18px;
+          }
+        }
+        .image{
+          img{
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  #features{
+    .content{
+      .infor{
+        p{
+          width: 182px;
+        }
+      }
+    }
+    .heading{
+      width: 112%;
+
+      p{
+        width: 192%;
+      }
+    }
+  }
+
+  #questions{
+    .content{
+      .btn{
+        font-size: 10px;
+      }
+    }
+    .headings{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p{
+        width: 180%;
+      }
+    }
+  }
+
+  #signup{
+    .content{
+      .btn{
+        font-size: 10px;
+      }
+    }
+  }
+
+  #contact{
+    .inner-contact{
+      margin-left: -70px;
+    }
+  }
+}
