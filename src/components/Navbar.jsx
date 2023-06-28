@@ -16,6 +16,8 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     };
 
+    
+
     return (
         <nav>
             <div className="image">
