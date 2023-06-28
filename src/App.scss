@@ -336,7 +336,7 @@ main {
       }
 
       p {
-        width: 272px;
+        width: 80%;
 
         span {
           border-bottom: var(--txt2-color);
@@ -607,10 +607,12 @@ main {
       img {
         width: 25px;
       }
+    
 
-      .rotate-img {
+      .upside-down {
         transform: rotate(180deg);
       }
+      
     }
   }
 }
@@ -780,9 +782,9 @@ main {
         flex-direction: column;
         gap: 11px;
         align-items: center;
-        /* left: 710px; */
+        right: 0; 
         background: #011E55;
-        width: 98vw;
+        width: 100%;
         bottom: -310px;
         z-index: 1000;
         padding-top: 59px;
@@ -795,6 +797,11 @@ main {
           flex-direction: column;
           gap: 15px;
         }
+      }
+
+      .nav-content.show{
+        transform: translateY(0);
+        top: 0;
       }
     }
 
@@ -811,6 +818,7 @@ main {
       gap: 20px;
       top: -83px;
       right: 54px;
+      z-index: 10000;
 
       .bar {
         width: 25px;
@@ -818,6 +826,21 @@ main {
         background-color: #ffffff;
         margin: 5px 0;
 
+      }
+    }
+
+    .menu-icon.close{
+      .bar.two{
+        opacity: 0;
+      }
+
+      .bar.one{
+        rotate: 140deg;
+      }
+
+      .bar.three{
+        rotate: -140deg;
+        margin-top: -15px;
       }
     }
 
@@ -952,7 +975,7 @@ main {
 @media (max-width: 479px) {
 
 nav{
-
+  
   .logo{
     width: 143px;
   }
@@ -967,8 +990,15 @@ nav{
     font-size: 16px;
   }
 }
-}
 
+.nav-content.show{
+  ul{
+    li{
+      font-size: 16px;
+    }
+  }
+}
+}
 
   #hero {
     .heading {
@@ -1046,7 +1076,7 @@ nav{
     .heading{
       width: 100%;
       p{
-        width: 130%;
+        width: 100%;
       }
     }
   }

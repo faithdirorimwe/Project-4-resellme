@@ -4,24 +4,14 @@ import Featured from "../components/Featured";
 
 const Home = () => {
 
-    const [isOpen, setIsOpen] = useState({});
+    const [openItemId, setOpenItemId] = useState(null);
     const toggleDropdown = (itemId) => {
-        setIsOpen((prevState) => ({
-            ...prevState,
-            [itemId]: !prevState[itemId]
-        }));
+        setOpenItemId((prevOpenItemId) => (prevOpenItemId === itemId ? null : itemId));
     };
+    const [imgRotateDown, setImgRotateDown] = useState(false);
+   
 
-    const [cardPosition, setCardPosition] = useState(0);
-const handleNextClick = () => {
-  setCardPosition((prevPosition) => prevPosition + 1);
-};
 
-const handlePrevClick = () => {
-  setCardPosition((prevPosition) => prevPosition - 1);
-};
-
-    
     return (
         <>
             {data.Home && data.Home.map((item) => {
@@ -175,27 +165,43 @@ const handlePrevClick = () => {
                                     <div className="que-inner">
                                         <div className="headings">
                                             <h2>{item.title}</h2>
-                                            <p>{item.ptext} 
-                                            <br /> <br />
-                                             {item.ptext1}</p>
+                                            <p>{item.ptext}
+                                                <br /> <br />
+                                                {item.ptext1}</p>
                                         </div>
 
                                         <div className="content">
-                                            {item.question && item.question.map((item) => {
-                                                const itemId = item.id;
-                                                const isDropdownOpen = isOpen[itemId] || false;
+                                            {item.question &&
+                                                item.question.map((item) => {
+                                                    const itemId = item.id;
+                                                    const isDropdownOpen = openItemId === itemId;
 
-                                                return (
-                                                    <div key={itemId} className="dropdown-container">
-                                                        <button className="btn" onClick={() => toggleDropdown(itemId)}>
-                                                            {item.title} <img src={item.image} alt="" />
-                                                        </button>
-                                                        {isDropdownOpen && (
-                                                            <p>{item.ptext}</p>
-                                                        )}
-                                                    </div>
-                                                );
-                                            })}
+                                                    return (
+                                                        <div key={itemId} className="dropdown-container">
+                                                            <button
+                                                                className="btn"
+                                                                onClick={() => {
+                                                                    toggleDropdown(itemId);
+                                                                    setImgRotateDown(!imgRotateDown);
+                                                                }}
+                                                            >
+                                                                {item.title} <img
+                                                                    src={item.image}
+                                                                    alt=""
+                                                                    style={{
+                                                                        transform: imgRotateDown
+                                                                            ? 'rotate(180deg)'
+                                                                            : '',
+                                                                    }}
+                                                                />
+
+                                                            </button>
+
+                                                            {isDropdownOpen && <p>{item.ptext}</p>}
+                                                        </div>
+                                                    );
+                                                })}
+
                                         </div>
                                     </div>
                                 </section>
