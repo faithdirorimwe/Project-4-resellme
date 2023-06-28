@@ -408,16 +408,26 @@ main {
     padding-top: 60px;
     display: flex;
     gap: 55px;
-    overflow-x: auto;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-left: 45px;
+    // overflow-x: auto;
+    // max-width: 1400px;
+    // margin: 0 auto;
+    padding-inline: 45px;
+    width: 100%;
+    margin: auto;
+
+
+    // .swiper-slide{
+    //   width: auto;
+    // }
 
     .infor {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: start;
+      max-width: 350px;
+      // width: 350px;
+      height: 400px;
 
       .image {
         position: relative;
@@ -473,42 +483,46 @@ main {
       width: 409px;
     }
 
-    .arrow-con {
-      padding-top: 30px;
-      display: flex;
-      align-items: center;
-      gap: 30px;
+    // .arrow-con {
+    //   padding-top: 30px;
+    //   display: flex;
+    //   align-items: center;
+    //   gap: 30px;
 
-      div {
-        position: relative;
-        display: block;
-        width: 1px;
-        padding: 30px;
-        border-radius: 50%;
-        border: 2px solid #ffffff;
-      }
+    //   div {
+    //     position: relative;
+    //     display: block;
+    //     width: 1px;
+    //     padding: 30px;
+    //     border-radius: 50%;
+    //     border: 2px solid #ffffff;
+    //   }
 
-      img {
-        filter: brightness(0) invert(1);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-      }
+    //   img {
+    //     filter: brightness(0) invert(1);
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     width: 50%;
+    //   }
 
-    }
+    // }
 
   }
 
   .content {
     display: flex;
     gap: 25px;
-    overflow-x: auto;
+    // overflow-x: auto;
+    width: 100%;
+    padding-inline: 45px;
+    margin: auto;
 
     .card {
       background-color: var(--txt2-color);
       width: 380px;
+      max-width: 350px;
       height: 450px;
 
       .quotes {
@@ -526,7 +540,7 @@ main {
       width: 100%;
 
       img {
-        width: 380px;
+        width: 100%;
       }
     }
 
@@ -758,6 +772,12 @@ main {
     }
   }
 
+  #testimonials{
+    .test-inner{
+      gap: 94px;
+    }
+  }
+
 }
 
 
@@ -887,7 +907,7 @@ main {
 
   #testimonials {
     .test-inner {
-      gap: 0;
+      gap: 60px;
       flex-wrap: wrap;
       justify-content: start;
     }
@@ -1169,7 +1189,7 @@ nav{
       height: 462px;
 
       p {
-        width: 276px;
+        width: 240px;
       }
     }
   }

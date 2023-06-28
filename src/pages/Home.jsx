@@ -1,6 +1,11 @@
 import data from "../../database/db";
 import React, { useState } from 'react';
 import Featured from "../components/Featured";
+import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperNavButton from "../components/SwiperNavButton";
+
+
 
 const Home = () => {
 
@@ -102,24 +107,22 @@ const Home = () => {
                             return (
                                 <section key={item.id} id="cases">
                                     <h2>{item.title}</h2>
-                                    <div className="content">
+                                    <Swiper className="content"
+                                    spaceBetween={30}
+                                    slidesPerView="auto"
+                                    >
                                         {item.case && item.case.map(item => {
                                             return (
-                                                <div key={item.id} className="infor">
+                                                <SwiperSlide key={item.id} className="  infor">
                                                     <div className="image"><img src={item.image} alt="" /></div>
                                                     <h3>{item.title}</h3>
                                                     <p>{item.ptext}</p>
                                                     <button className="btn"> {item.btn}</button>
-                                                </div>
+                                                </SwiperSlide>
                                             )
                                         })}
-                                    </div>
-                                    <div className="arrow-container">
-                                        <div><img src={item.img} alt="" /></div>
-                                        <div><img src={item.image} alt="" /></div>
-
-
-                                    </div>
+                                        <SwiperNavButton/>
+                                    </Swiper>
                                 </section>
                             )
                         })}
@@ -132,16 +135,14 @@ const Home = () => {
                                         <div className="headings">
                                             <h2>{item.title}</h2>
                                             <p>{item.ptext}</p>
-                                            <div className="arrow-con">
-                                                <div><img src={item.img} alt="" /></div>
-                                                <div><img src={item.image} alt="" /></div>
-                                            </div>
                                         </div>
 
-                                        <div className="content">
+                                        <Swiper className="content"
+                                        spaceBetween={30}
+                                        slidesPerView="auto">
                                             {item.case && item.case.map(item => {
                                                 return (
-                                                    <div key={item.id} className="card">
+                                                    <SwiperSlide key={item.id} className="card">
                                                         <div className="image"><img src={item.image} alt="" /></div>
                                                         <div className="quotes"><img src={item.img} alt="" /></div>
                                                         <div className="card-heading">
@@ -150,10 +151,11 @@ const Home = () => {
                                                             <p>{item.ptext}</p>
                                                         </div>
 
-                                                    </div>
+                                                    </SwiperSlide>
                                                 )
                                             })}
-                                        </div>
+                                             <SwiperNavButton/>
+                                        </Swiper>
                                     </div>
                                 </section>
                             )
