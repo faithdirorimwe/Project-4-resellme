@@ -339,6 +339,10 @@ main {
   background: var(--cases-color);
   padding-bottom: 40px;
 
+.swiper-wrapper{
+  gap: 50px;
+}
+
   h2 {
     padding-top: 80px;
     padding-left: 60px;
@@ -1197,7 +1201,7 @@ nav{
   }
 
   .content {
-    max-width: 324px;
+    max-width: 650px;
 
     .card {
       height: 462px;
