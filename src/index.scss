@@ -525,3 +525,14 @@ body {
     }
   }
 }
+
+
+@media (max-width: 325px){
+.features{
+  .card-inner2{
+    .btn{
+      margin-top: -312px;
+    }
+  }
+}
+}
