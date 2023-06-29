@@ -452,8 +452,6 @@ body {
       }
 
       .swiper-nav-btns {
-        // display: flex;
-        // gap: 20px;
         margin-top: 467px;
       }
     }
@@ -497,12 +495,15 @@ body {
   .features{
 
     .card-container{
-      .inner{
+      .card-inner2{
+        .inner{
         .cards-inner{
           margin-left: 5px;
         }
       }
-    }
+    }  
+      }
+    
     .arrow-con2{
       gap: 15px;
       div{
