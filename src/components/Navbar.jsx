@@ -1,11 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/resellme-logo.svg";
 import tabler from "../assets/images/tabler_window.svg";
-import sun from "../assets/images/sun.svg";
 import search from "../assets/images/akar-icons_search.svg";
 import hero from "../assets/images/hero-bg.png";
 import { useState } from 'react';
-// import { useEffect } from 'react';
+import DarkMode from "./DarkMode";
+
 
 const Navbar = () => {
 
@@ -16,7 +16,7 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     };
 
-    
+
 
     return (
         <nav>
@@ -39,7 +39,7 @@ const Navbar = () => {
                         <li className="menu-itemone"><NavLink to="/Docs">Support</NavLink><img src={tabler} alt="" /></li>
                         <li className="menu-itemone"><NavLink to="/Docs">Portal</NavLink><img src={tabler} alt="" /></li>
                         <li className="menu-itemone"><NavLink to="/Blog">Register</NavLink><img src={tabler} alt="" /></li>
-                        <li className="menu-itemone"><Link to="/Blog"><img src={sun} alt="light mode" /></Link></li>
+                        <li className="menu-itemone"><Link><DarkMode/></Link></li>
                         <button> <img src={search} alt="" /><Link>Search</Link></button>
                     </ul>
                 </div>

@@ -9,6 +9,8 @@ import eight from "../assets/images/263chat-logo.png";
 import arrow1 from "../assets/images/Arrow 1.svg";
 import arrow from "../assets/images/Arrow .svg";
 import { useState } from "react";
+import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Featured = () => {
 
@@ -64,7 +66,7 @@ const Featured = () => {
                 <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
             </div>
 
-            <div className="card-inner2">
+            {/* <div className="card-inner2">
                 <div className="inner">
                     <div className="cards-inner">
                         <div className="card">
@@ -107,7 +109,7 @@ const Featured = () => {
                 <div onClick={handleNextClick}><img src={arrow} alt="next" /></div>
                 <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
             </div>
-            </div>
+            </div> */}
 
 
         </div>

@@ -13,18 +13,46 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+
+  --qbg-color: #ffffff;
   --bg-color: #ffffff;
   --txt-color: #ffffff;
   --txt2-color: #003F74;
   --card-color: #011E55;
+  --test-color:#011E55;
   --btn-color: #018181;
   --btn2-color: #013D7B;
+  --qbtn2-color: #013D7B;
   --cases-color: #F8F8F8;
   --case-color: #303846;
+  --overlay-hero:rgba(1, 30, 85, 0.747);
 
 }
 
+[data-theme="dark"]{
+  --qbtn2-color: #013D7B;
+  --qbg-color: #ffffff;
+--bg-color:#030a16;
+--btn2-color:#ffffff;
+--card-color:#ffffff;
+--test-color:#011e5533;
+--cases-color: #303846;
+--txt2-color: #ffffff;
+--txt-color: #030a16;
+--overlay-hero:rgba(1, 15, 40, 0.776);
+
+}
+
+
+
+[data-theme="dark"]nav{
+  .overlay{
+    backdrop-filter: blur(6px)
+  }
+}
+
 body {
+  background:var(--bg-color);
   overflow-x: hidden;
   }
 
@@ -184,7 +212,7 @@ body {
       width: 1px;
       padding: 30px;
       border-radius: 50%;
-      background-color: var(--txt2-color);
+      background-color: #003F74;
     }
 
     img {
@@ -237,6 +265,21 @@ body {
 }
 
 
+@media (max-width: 1420px) {
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+          width: 290px;
+    height: 193px;
+        }
+      }
+    }
+  }
+  
+}
+
+
 @media (max-width: 1320px) {
   .features{
     .card-container{
@@ -244,6 +287,19 @@ body {
         .card{
         width: 280px;
       }
+      }
+    }
+  }
+}
+
+@media (max-width: 1270px){
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+          width: 227px;
+          height: 162px;
+        }
       }
     }
   }
@@ -260,6 +316,46 @@ body {
     }
   }
 }
+
+@media (max-width:1065px) {
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+          width: 201px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+          width: 206px;
+          height: 162px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 966px){
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+          width: 186px;
+          height: 154px;
+        }
+      }
+    }
+  }
+}
+
 
 @media (max-width: 900px) {
   .features{

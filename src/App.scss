@@ -1,7 +1,5 @@
 #root {
-  // max-width: 1280px;
   margin: 0 auto;
-  // padding: 1.5rem;
   text-align: center;
 }
 
@@ -24,6 +22,7 @@
 /********NAVBAR********/
 nav {
   width: 100vw;
+  color: var(--bg-color);
 
   .menu-icon {
     display: none;
@@ -37,11 +36,12 @@ nav {
     }
 
     .overlay {
-      background-color: #011e55b5;
+      background-color: var(--overlay-hero);
       width: 100%;
       height: 99.3%;
       position: absolute;
       top: 0;
+     
     }
   }
 
@@ -100,6 +100,7 @@ main {
 }
 
 #hero {
+  color: var(--bg-color);
   margin-top: 45px;
   font-family: 'cero';
 
@@ -157,6 +158,7 @@ main {
 }
 
 #about {
+  color: var(--card-color);
   padding-top: 620px;
   max-width: 1280px;
   margin: 250px auto;
@@ -208,6 +210,7 @@ main {
 }
 
 #service {
+  color: var(--card-color);
   margin-top: -30px;
   margin-bottom: 20px;
 
@@ -243,7 +246,8 @@ main {
       width: 400px;
       height: 500px;
       border-radius: 10px;
-      background: var(--card-color);
+      color: var(--bg-color);
+      background:#011E55;
 
       .circle {
         font-family: 'cero';
@@ -278,6 +282,7 @@ main {
 }
 
 #features {
+  color: var(--card-color);
   margin-bottom: 30px;
   margin-top: 150px;
   padding: 60px;
@@ -305,7 +310,7 @@ main {
   .image {
     position: relative;
     display: block;
-    background-color: var(--btn2-color);
+    background-color:#013D7B;
     width: 1px;
     padding: 40px;
     border-radius: 50%;
@@ -422,7 +427,7 @@ main {
       .image {
         position: relative;
         display: block;
-        background-color: var(--btn2-color);
+        background-color:  #013D7B;
         width: 1px;
         padding: 40px;
         border-radius: 50%;
@@ -455,8 +460,9 @@ main {
 #testimonials {
   padding-top: 150px;
   padding-bottom: 150px;
-  background: var(--card-color);
+  background: var(--test-color);
   margin-top: 150px;
+  color: var(--bg-color);
 
   .test-inner {
     display: flex;
@@ -468,6 +474,7 @@ main {
 
   .headings {
     margin-left: 48px;
+    color: #ffffff;
 
     p {
       width: 409px;
@@ -529,7 +536,7 @@ main {
 }
 
 #questions {
-  color: var(--txt2-color);
+  color: #003F74;
   text-align: start;
   margin-top: 100px;
 
@@ -574,8 +581,8 @@ main {
       border-radius: 5px;
       font-family: 'cero';
       width: 500px;
-      background: var(--btn2-color);
-      color: var(--bg-color);
+      background: var(--qbtn2-color);
+      color: var(--qbg-color);
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -606,6 +613,7 @@ main {
   justify-content: center;
   margin-top: 400px;
   margin-bottom: 400px;
+  color: var(--bg-color);
 
   .image {
     position: absolute;
@@ -656,6 +664,7 @@ main {
   padding: 80px;
   background-color: #303846;
   height: 372px;
+  color: #ffffff;
 
 
   h1 {
@@ -688,6 +697,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 4px;
+    color: #ffffff;
   }
 }
 
@@ -742,6 +752,65 @@ main {
   }
 
 }
+
+
+@media (max-width: 1270px){
+  nav{
+    .navbar{
+      justify-content: start;
+
+      .menu{
+        gap: 16px;
+      }
+
+      .nav-content{
+        gap: 127px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1065px){
+  nav{
+    .navbar{
+
+      .nav-content{
+        gap: 101px;
+      }
+      .menu{
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px){
+  nav{
+    .navbar{
+      .menu{
+        font-size: 16px;
+      }
+      .nav-content{
+        gap: 56px;
+      }
+    }
+  }
+  }
+
+
+  @media (max-width: 950px){
+    nav{
+      .navbar{
+       .logo{
+        width: 209px;
+       }
+        }
+        .nav-content{
+        gap: 44px;
+        }
+      }
+    }
 
 
 @media (max-width: 900px) {
