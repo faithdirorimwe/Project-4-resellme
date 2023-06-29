@@ -41,7 +41,7 @@ nav {
       height: 99.3%;
       position: absolute;
       top: 0;
-     
+
     }
   }
 
@@ -229,7 +229,7 @@ main {
       height: 500px;
       border-radius: 10px;
       color: var(--bg-color);
-      background:#011E55;
+      background: #011E55;
 
       .circle {
         font-family: 'cero';
@@ -292,7 +292,7 @@ main {
   .image {
     position: relative;
     display: block;
-    background-color:#013D7B;
+    background-color: #013D7B;
     width: 1px;
     padding: 40px;
     border-radius: 50%;
@@ -339,9 +339,9 @@ main {
   background: var(--cases-color);
   padding-bottom: 40px;
 
-.swiper-wrapper{
-  gap: 50px;
-}
+  .swiper-wrapper {
+    gap: 50px;
+  }
 
   h2 {
     padding-top: 80px;
@@ -413,7 +413,7 @@ main {
       .image {
         position: relative;
         display: block;
-        background-color:  #013D7B;
+        background-color: #013D7B;
         width: 1px;
         padding: 40px;
         border-radius: 50%;
@@ -577,12 +577,12 @@ main {
       img {
         width: 25px;
       }
-    
+
 
       .upside-down {
         transform: rotate(180deg);
       }
-      
+
     }
   }
 }
@@ -665,7 +665,7 @@ main {
     gap: 180px;
     margin-bottom: 38px;
     flex-wrap: wrap;
-  
+
   }
 
 
@@ -690,9 +690,7 @@ main {
 
 
 
-@media (max-width: 1320px) {
-
-}
+@media (max-width: 1320px) {}
 
 @media (max-width: 1100px) {
 
@@ -731,8 +729,8 @@ main {
     }
   }
 
-  #testimonials{
-    .test-inner{
+  #testimonials {
+    .test-inner {
       gap: 94px;
     }
   }
@@ -740,16 +738,16 @@ main {
 }
 
 
-@media (max-width: 1270px){
-  nav{
-    .navbar{
+@media (max-width: 1270px) {
+  nav {
+    .navbar {
       justify-content: start;
 
-      .menu{
+      .menu {
         gap: 16px;
       }
 
-      .nav-content{
+      .nav-content {
         gap: 127px;
       }
     }
@@ -757,46 +755,49 @@ main {
 }
 
 
-@media (max-width: 1065px){
-  nav{
-    .navbar{
+@media (max-width: 1065px) {
+  nav {
+    .navbar {
 
-      .nav-content{
+      .nav-content {
         gap: 101px;
       }
-      .menu{
+
+      .menu {
         gap: 10px;
       }
     }
   }
 }
 
-@media (max-width: 992px){
-  nav{
-    .navbar{
-      .menu{
+@media (max-width: 992px) {
+  nav {
+    .navbar {
+      .menu {
         font-size: 16px;
       }
-      .nav-content{
+
+      .nav-content {
         gap: 56px;
       }
     }
   }
-  }
+}
 
 
-  @media (max-width: 950px){
-    nav{
-      .navbar{
-       .logo{
+@media (max-width: 950px) {
+  nav {
+    .navbar {
+      .logo {
         width: 209px;
-       }
-        }
-        .nav-content{
-        gap: 44px;
-        }
       }
     }
+
+    .nav-content {
+      gap: 44px;
+    }
+  }
+}
 
 
 @media (max-width: 900px) {
@@ -820,7 +821,7 @@ main {
         flex-direction: column;
         gap: 11px;
         align-items: center;
-        right: 0; 
+        right: 0;
         background: #011E55;
         width: 100%;
         bottom: -310px;
@@ -837,7 +838,7 @@ main {
         }
       }
 
-      .nav-content.show{
+      .nav-content.show {
         transform: translateY(0);
         top: 0;
       }
@@ -867,16 +868,16 @@ main {
       }
     }
 
-    .menu-icon.close{
-      .bar.two{
+    .menu-icon.close {
+      .bar.two {
         opacity: 0;
       }
 
-      .bar.one{
+      .bar.one {
         rotate: 140deg;
       }
 
-      .bar.three{
+      .bar.three {
         rotate: -140deg;
         margin-top: -15px;
       }
@@ -887,7 +888,7 @@ main {
   #about {
     padding-top: 250px;
 
-    .image{
+    .image {
       width: 100%
     }
   }
@@ -944,18 +945,18 @@ main {
     }
   }
 
-  #signup{
-    .image{
-      img{
+  #signup {
+    .image {
+      img {
         height: 75vh;
       }
     }
   }
 
-  #contact{
+  #contact {
     height: auto;
   }
- 
+
 }
 
 
@@ -969,40 +970,42 @@ main {
     }
   }
 
-  #contact{
-    .inner-contact{
-     flex-direction: column;
+  #contact {
+    .inner-contact {
+      flex-direction: column;
     }
   }
 
-  #about{
+  #about {
     padding-top: 280px;
-    .image{
-      img{
+
+    .image {
+      img {
         width: 79%;
       }
     }
   }
 
-  #questions{
-    .content{
+  #questions {
+    .content {
 
-      .dropdown-container  {
-        p{
+      .dropdown-container {
+        p {
           padding: 20px;
-        width: 472px;
+          width: 472px;
         }
-    }
-      .btn{
+      }
+
+      .btn {
         width: 450px;
         text-align: start;
       }
     }
   }
 
-  #features{
-    .card-container{
-      .cards-inner{
+  #features {
+    .card-container {
+      .cards-inner {
         width: 97vw;
       }
     }
@@ -1012,31 +1015,34 @@ main {
 
 @media (max-width: 479px) {
 
-nav{
-  
-  .logo{
-    width: 143px;
-  }
-  .image{
-    img{
-      height: 740px;
-    }
-  }
-  .menu-icon{
-        right: 17px;
-  h1{
-    font-size: 16px;
-  }
-}
+  nav {
 
-.nav-content.show{
-  ul{
-    li{
-      font-size: 16px;
+    .logo {
+      width: 143px;
+    }
+
+    .image {
+      img {
+        height: 740px;
+      }
+    }
+
+    .menu-icon {
+      right: 17px;
+
+      h1 {
+        font-size: 16px;
+      }
+    }
+
+    .nav-content.show {
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
     }
   }
-}
-}
 
   #hero {
     .heading {
@@ -1045,25 +1051,25 @@ nav{
       justify-content: center;
       align-items: center;
 
-      h1{
-            font-size: 33px;
-    line-height: 47px;
+      h1 {
+        font-size: 33px;
+        line-height: 47px;
       }
 
-      p{
+      p {
         width: 60%;
         font-size: 15px;
       }
     }
 
-    .btn-container{
-      .btn{
+    .btn-container {
+      .btn {
         font-size: 15px;
       }
     }
 
-    .image{
-      img{
+    .image {
+      img {
         width: 100%;
         top: 61px;
         padding: 10px;
@@ -1071,205 +1077,210 @@ nav{
     }
   }
 
-  #about{
+  #about {
     padding-top: 110px;
 
-    .btn{
+    .btn {
       width: 40%;
       font-size: 15px;
     }
 
-.about-content{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    .about-content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-  h2{
-    width: 53%;
-  }
+      h2 {
+        width: 53%;
+      }
 
-  p{
-    width: 93%;
-  }
-}
+      p {
+        width: 93%;
+      }
+    }
 
-    .image{
-      img{
+    .image {
+      img {
         width: 90%;
       }
     }
   }
 
-  #features{
+  #features {
 
-    .image{
-          padding: 30px;
+    .image {
+      padding: 30px;
     }
 
-    .content{
+    .content {
       width: inherit;
     }
 
-    .heading{
+    .heading {
       width: 100%;
-      p{
+
+      p {
         width: 100%;
       }
     }
   }
 
-  #cases{
-    .content{
-      .infor{
-        .image{
-              padding: 30px;
+  #cases {
+    .content {
+      .infor {
+        .image {
+          padding: 30px;
         }
       }
     }
 
-    .btn{
+    .btn {
       font-size: 15px;
     }
 
-    .arrow-container{
+    .arrow-container {
       gap: 15px;
-      div{
-            padding: 20px;
+
+      div {
+        padding: 20px;
       }
     }
   }
 
-  #service{
-    .content{
-      .cards{
+  #service {
+    .content {
+      .cards {
         width: 80%;
         height: 1%;
 
-        .circle{
-              width: 52px;
-    padding: 5px;
+        .circle {
+          width: 52px;
+          padding: 5px;
         }
 
-        .image{
-          img{
+        .image {
+          img {
             width: 32%;
           }
         }
 
-        .content{
+        .content {
           padding: 8px;
-          h3{
-                font-size: 24px;
+
+          h3 {
+            font-size: 24px;
           }
         }
       }
     }
 
-    .btn{
+    .btn {
       width: 80%;
       font-size: 15px;
     }
   }
 
-#testimonials {
+  #testimonials {
 
-  .test-inner {
-    margin-top: -66px;
-  }
-
-  .headings {
-    margin-left: 0;
-    text-align: center;
-    padding: 21px;
-
-
-    p {
-      width: inherit;
-      padding-top: 15px;
+    .test-inner {
+      margin-top: -66px;
     }
 
-    .arrow-con {
-      justify-content: center;
-      gap: 15px;
+    .headings {
+      margin-left: 0;
+      text-align: center;
+      padding: 21px;
 
-      div{
-            padding: 20px;
-      }
-    }
 
-  }
-
-  .content {
-    max-width: 800px;
-
-    .card {
-      height: 462px;
-
-      p {
-        width: 240px;
-      }
-    }
-  }
-}
-
-#questions {
-
-  .headings {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    p {
-      width: 100%;
-    }
-  }
-
-  .content {
-
-    .dropdown-container {
       p {
         width: inherit;
+        padding-top: 15px;
+      }
+
+      .arrow-con {
+        justify-content: center;
+        gap: 15px;
+
+        div {
+          padding: 20px;
+        }
+      }
+
+    }
+
+    .content {
+      max-width: 800px;
+
+      .card {
+        height: 462px;
+
+        p {
+          width: 240px;
+        }
+      }
+    }
+  }
+
+  #questions {
+
+    .headings {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        width: 100%;
       }
     }
 
-    .btn {
-      width: 80vw;
-      height: 80px;
-      font-size: 15px;
+    .content {
 
-      img {
-        display: none;
+      .dropdown-container {
+        p {
+          width: inherit;
+        }
       }
 
+      .btn {
+        width: 80vw;
+        height: 80px;
+        font-size: 15px;
+
+        img {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  #signup {
+    margin-top: 387px;
+
+    .content {
+      .btn {
+        width: 47%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  #contact {
+    h1 {
+      font-size: 20px;
     }
   }
 }
 
-#signup{
-  margin-top: 406px;
-  .content{
-    .btn{
-      width: 47%;
-      font-size: 14px;
+
+@media (max-width: 369px) {
+
+  #testimonials {
+    .content {
+      margin-left: -26px;
     }
+
+
   }
-}
-
-#contact{
-  h1{
-    font-size: 20px;
-  }
-}
-}
-
-
-@media (max-width: 369px){
-
-#testimonials  {
-  .content{
-    margin-left: -26px;
-  }
-    
-
-}
 }

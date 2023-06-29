@@ -502,21 +502,19 @@ body {
 @media (max-width: 479px) {
   .features {
 
-    .card-container {
       .card-inner2 {
         .inner {
+          margin-left: 20px;
           .cards-inner {
             margin-left: 5px;
           }
         }
 
         .btn {
-          margin-top: -251px;
+          margin-top: -288px;
         }
       }
 
-
-    }
 
     .arrow-con2 {
       gap: 15px;
