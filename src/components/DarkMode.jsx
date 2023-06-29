@@ -12,7 +12,7 @@ const DarkMode = () => {
     
     return ( 
         <div className="dark_mode">
-            <img src={darkMode ? moon : sun} alt="" className="sun"   onClick={toggleDarkMode}/>
+            <img src={darkMode ? sun : moon} alt="" className="sun"   onClick={toggleDarkMode}/>
         </div>
      );
 }

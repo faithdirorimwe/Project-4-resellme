@@ -180,6 +180,32 @@ body {
     }
 }
 
+.searchbar{
+  display: flex;
+  align-items: center;
+ 
+  img{
+    position: absolute;
+  z-index: 1;
+  padding-left: 20px;
+  width: 45px;
+  }
+
+  input{
+    position: relative;
+    border: none;
+    background-color: var(--bg-color);
+    border-radius: 30px;
+    padding-left: 50px;
+    width: 120px;
+    height: 5vh;
+
+    &::placeholder{
+      color: var(--card-color);
+    }
+  }
+ 
+}
 
 #testimonials{
   .swiper-nav-btns{
@@ -364,6 +390,19 @@ body {
         width: 180px;
         height: 144px;
       }
+      }
+    }
+  }
+}
+
+@media (max-width: 869px) {
+  .features{
+    .card-container{
+      .cards-inner{
+        .card{
+          width: 154px;
+          height: 125px;
+        }
       }
     }
   }

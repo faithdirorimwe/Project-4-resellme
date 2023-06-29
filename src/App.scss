@@ -73,24 +73,6 @@ nav {
         align-items: center;
       }
 
-      button {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
-        background-color: var(--bg-color);
-        border: none;
-        width: 150px;
-        height: 45px;
-        border-radius: 70px;
-
-        a {
-          font-family: 'cero-bold';
-          font-size: 16px;
-          color: var(--card-color);
-        }
-      }
-
     }
   }
 }

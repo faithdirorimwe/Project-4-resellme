@@ -1,10 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/resellme-logo.svg";
 import tabler from "../assets/images/tabler_window.svg";
-import search from "../assets/images/akar-icons_search.svg";
 import hero from "../assets/images/hero-bg.png";
 import { useState } from 'react';
 import DarkMode from "./DarkMode";
+import SearchBar from "./SearchBar";
 
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
                         <li className="menu-itemone"><NavLink to="/Docs">Portal</NavLink><img src={tabler} alt="" /></li>
                         <li className="menu-itemone"><NavLink to="/Blog">Register</NavLink><img src={tabler} alt="" /></li>
                         <li className="menu-itemone"><Link><DarkMode/></Link></li>
-                        <button> <img src={search} alt="" /><Link>Search</Link></button>
+                        <li className="menu-itemone sidebar"><SearchBar/></li>
                     </ul>
                 </div>
             </div>
