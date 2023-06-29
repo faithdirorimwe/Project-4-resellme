@@ -62,11 +62,11 @@ const Featured = () => {
                 )}
             </div>
             <div className="arrow-con">
-                <div onClick={handleNextClick}><img src={arrow} alt="next" /></div>
-                <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
+                <div onClick={handleNextClick}><img src={arrow1} alt="next" /></div>
+                <div onClick={handlePrevClick}><img src={arrow} alt="previous" /></div>
             </div>
 
-            {/* <div className="card-inner2">
+             <div className="card-inner2">
                 <div className="inner">
                     <div className="cards-inner">
                         <div className="card">
@@ -109,7 +109,7 @@ const Featured = () => {
                 <div onClick={handleNextClick}><img src={arrow} alt="next" /></div>
                 <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
             </div>
-            </div> */}
+            </div> 
 
 
         </div>

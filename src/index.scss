@@ -25,7 +25,7 @@
   --qbtn2-color: #013D7B;
   --cases-color: #F8F8F8;
   --case-color: #303846;
-  --overlay-hero:rgba(1, 30, 85, 0.747);
+  --overlay-hero:rgba(1, 30, 85, 0.851);
 
 }
 
@@ -42,7 +42,6 @@
 --overlay-hero:rgba(1, 15, 40, 0.776);
 
 }
-
 
 
 [data-theme="dark"]nav{
@@ -395,7 +394,7 @@ body {
           gap: 20px;
 
           .card{
-            background: #FFFFFF;
+            background: #ffffff;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
             border-radius: 9px;
             width: 45vw;
@@ -429,7 +428,7 @@ body {
         width: 1px;
         padding: 30px;
         border-radius: 50%;
-        background-color: var(--txt2-color);
+        background-color: #013D7B;
       }
   
       img {

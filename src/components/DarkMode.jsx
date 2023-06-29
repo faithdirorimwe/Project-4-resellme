@@ -1,5 +1,6 @@
 import { useState } from "react";
 import sun from "../assets/images/sun.svg";
+import moon from "../assets/images/Icon awesome-moon.png"
 
 const DarkMode = () => {
  const [darkMode, setDarkMode] = useState(false);
@@ -11,7 +12,7 @@ const DarkMode = () => {
     
     return ( 
         <div className="dark_mode">
-            <img src={sun} alt="" className="sun"   onClick={toggleDarkMode}/>
+            <img src={darkMode ? moon : sun} alt="" className="sun"   onClick={toggleDarkMode}/>
         </div>
      );
 }
