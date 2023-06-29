@@ -12,6 +12,7 @@ const Home = () => {
     const [openItemId, setOpenItemId] = useState(null);
     const toggleDropdown = (itemId) => {
         setOpenItemId((prevOpenItemId) => (prevOpenItemId === itemId ? null : itemId));
+        setImgRotateDown((prevOpenItemId) => (prevOpenItemId === itemId ? null : itemId));
     };
     const [imgRotateDown, setImgRotateDown] = useState(false);
    
@@ -177,6 +178,7 @@ const Home = () => {
                                                 item.question.map((item) => {
                                                     const itemId = item.id;
                                                     const isDropdownOpen = openItemId === itemId;
+                                                    const imgRotateDown = openItemId === itemId;
 
                                                     return (
                                                         <div key={itemId} className="dropdown-container">

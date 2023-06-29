@@ -11,6 +11,7 @@ import arrow from "../assets/images/Arrow .svg";
 import { useState } from "react";
 import 'swiper/css';
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperNavButton from "./SwiperNavButton";
 
 const Featured = () => {
 
@@ -67,48 +68,51 @@ const Featured = () => {
             </div>
 
              <div className="card-inner2">
-                <div className="inner">
-                    <div className="cards-inner">
+                <Swiper className="inner"
+                spaceBetween={30}
+                slidesPerView="auto"
+                >
+                    <SwiperSlide className="cards-inner">
                         <div className="card">
                             <img src={one} alt="" />
                         </div>
                         <div className="card">
                             <img src={two} alt="" />
                         </div>
-                    </div>
+                    </SwiperSlide>
 
-                    <div className="cards-inner">
+                    <SwiperSlide className="cards-inner">
                         <div className="card">
                             <img src={three} alt="" />
                         </div>
                         <div className="card">
                             <img src={four} alt="" />
                         </div>
-                    </div>
+                    </SwiperSlide>
 
-                    <div className="cards-inner">
+                    <SwiperSlide className="cards-inner">
                         <div className="card">
                             <img src={five} alt="" />
                         </div>
                         <div className="card">
                             <img src={six} alt="" />
                         </div>
-                    </div>
+                    </SwiperSlide>
 
-                    <div className="cards-inner">
+                    <SwiperSlide className="cards-inner">
                         <div className="card">
                             <img src={seven} alt="" />
                         </div>
                         <div className="card">
                             <img src={eight} alt="" />
                         </div>
+                    </SwiperSlide>
+                    <div className="btn">
+                        <SwiperNavButton/>
                     </div>
-
-                </div>
-                <div className="arrow-con2">
-                <div onClick={handleNextClick}><img src={arrow} alt="next" /></div>
-                <div onClick={handlePrevClick}><img src={arrow1} alt="previous" /></div>
-            </div>
+                    
+                </Swiper>
+               
             </div> 
 
 
